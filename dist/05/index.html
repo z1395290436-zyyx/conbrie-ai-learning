@@ -1,0 +1,313 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-primary": "#ffffff",
+          "error-container": "#ffdad6",
+          "text-muted": "#64748b",
+          "background": "#ffffff",
+          "surface-container": "#f8fafc",
+          "text-inverse": "#ffffff",
+          "primary": "#05c168",
+          "primary-container": "#10b981",
+          "on-primary-container": "#00422b",
+          "secondary": "#006d38",
+          "border-subtle": "#e2e8f0",
+          "border-strong": "#cbd5e1",
+          "surface": "#ffffff",
+          "surface-secondary": "#f8fafc",
+          "surface-card": "#ffffff",
+          "surface-card-elevated": "#f8fafc",
+          "surface-card-active": "#05c168",
+          "text-primary": "#0f172a",
+          "text-secondary": "#475569",
+          "on-surface": "#1e293b",
+          "mastery-mastered": "#10b981",
+          "mastery-proficient": "#05c168",
+          "mastery-learning": "#f59e0b",
+          "mastery-weak": "#f43f5e"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "0.75rem",
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "space-md": "1rem",
+          "space-lg": "1.25rem",
+          "space-xl": "1.75rem",
+          "space-2xl": "2.5rem",
+          "margin": "1.25rem"
+        },
+        "fontFamily": {
+          "headline-lg": ["Plus Jakarta Sans"],
+          "headline-sm": ["Plus Jakarta Sans"],
+          "body-md": ["Inter"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "label-sm": ["Plus Jakarta Sans"],
+          "label-md": ["Plus Jakarta Sans"],
+          "body-sm": ["Inter"],
+          "body-lg": ["Inter"],
+          "label-lg": ["Plus Jakarta Sans"],
+          "display-hero": ["Plus Jakarta Sans"]
+        },
+        "fontSize": {
+          "headline-lg": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+          "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+          "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+          "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+          "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.02em", "fontWeight": "700" }],
+          "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+          "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+          "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+          "label-lg": ["14px", { "lineHeight": "18px", "fontWeight": "600" }],
+          "display-hero": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "700" }]
+        }
+      }
+    }
+  };
+</script><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;background-color:#ffffff;color:#0f172a;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style><link rel="icon" type="image/svg+xml" href="/conbrie-ai-learning/favicon.svg"><style>html{background:#eef2f7}body{width:100%;max-width:430px;margin:0 auto!important;box-shadow:0 0 48px rgba(15,23,42,.08)}(max-width:430px){body{box-shadow:none}}</style></head><body class="bg-white font-body-md text-body-md text-slate-800 flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-white/90 backdrop-blur-xl border-b border-slate-100 shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="返回" class="w-11 h-11 -ml-2 rounded-full flex items-center justify-center text-slate-700 hover:bg-slate-100 transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="蜂鸟轻记 Conbrie Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XAC030XFN3mscMuBtxixsfXema1MoWMKQStgWOxsClF0dpqTyzDgnhhcxLGYVp7N3sl9CuA9x5v3lOL1pIhNbq2Mc4knyIZWqf44lkixTIEa1K8hj-8A_jQkpuYncukU1tNw4uuYSfuaqTQH0kioxoY2mKXaChtdzeD3XHOR0ObaMPOtiegyip5IdQPOkSV_epYMiSU8oYW0QpGS1TB58ld0I70xLg0t7ESV7A3otSvS_3AqcBTKfELPE"><h1 class="font-headline-sm text-headline-sm text-slate-900 truncate">智能强化测验</h1></div><div class="flex items-center gap-space-xs"><button aria-label="更多选项" class="w-11 h-11 rounded-full flex items-center justify-center text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">more_horiz</span></button><div class="flex items-center justify-center pl-space-xs"><img alt="用户头像" class="w-8 h-8 rounded-full object-cover ring-2 ring-emerald-500/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrpKJ-Ex9x8oV-MLmNCIAHC5BM7d5m32pM98a71-37LE9dnfEQVK01b_XyB0hADRiXwvf2i7UopOVvMb3HDQAhbVq9EFztvQwiPyRzN7x2kqDamKQqJi2x4jdx8RhSKQnizokcClV_FrtNhlJSKBPhW1nFq9pK_4iFN_tZevu1s2YBfn-JfKMJ9F_y4D23sJfOymKOzoAGRZyH5XKJIgprzP7RV6h5ci4DL-oSzSsFFez8sH_13vr9"></div></div></div></header><main class="flex-1 flex flex-col w-full pt-16 pb-safe bg-white"><div class="flex flex-col w-full px-margin pb-space-2xl space-y-space-md pt-space-sm">
+<!-- Top Quiz Header Info Strip -->
+<div class="flex items-center justify-between py-space-xs">
+<div class="flex items-center space-x-space-xs">
+<button aria-label="退出测试" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:text-slate-800 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<span class="font-label-md text-label-md text-slate-600 truncate max-w-[140px]">民法效力篇 · 随堂测</span>
+</div>
+<div class="flex items-center space-x-space-xs">
+<!-- Live Timer Pill -->
+<div class="flex items-center bg-slate-100 px-2.5 py-1 rounded-full space-x-1 border border-slate-200/60">
+<span class="material-symbols-outlined text-emerald-600 text-[14px]">schedule</span>
+<span class="font-label-sm text-label-sm text-slate-800 tracking-wider font-semibold" id="quiz-timer">04:12</span>
+</div>
+<!-- Question Progress Pill -->
+<div class="bg-slate-100 px-2.5 py-1 rounded-full border border-slate-200/60">
+<span class="font-label-sm text-label-sm text-emerald-600 font-bold">04</span>
+<span class="font-label-sm text-label-sm text-slate-400">/10</span>
+</div>
+</div>
+</div>
+<!-- Progress Bar Line -->
+<div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
+<div class="bg-emerald-500 h-full rounded-full transition-all duration-300 shadow-[0_0_8px_rgba(16,185,129,0.4)]" style="width: 40%;"></div>
+</div>
+<!-- Main Question Card -->
+<div class="bg-white rounded-[24px] p-space-lg relative overflow-hidden border border-slate-200 shadow-sm space-y-space-md">
+<!-- Ambient subtle glow behind question badge -->
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-space-xs">
+<span class="bg-emerald-50 text-emerald-700 border border-emerald-200/60 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[12px] text-emerald-600" style="font-variation-settings: 'FILL' 1;">stars</span>
+          单选题 · 考点重点
+        </span>
+<span class="bg-slate-100 text-slate-500 px-2 py-0.5 rounded-full font-label-sm text-label-sm">
+          分值 2.0
+        </span>
+</div>
+<button aria-label="收藏题目" class="text-slate-400 hover:text-slate-700 transition-colors p-1" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+<!-- Question Body -->
+<div class="relative z-10">
+<h2 class="font-headline-sm text-headline-sm text-slate-900 leading-relaxed">
+        甲将房屋出租给乙，租赁期间甲未通知乙即将该房卖给不知情的丙并办理了过户登记。关于本案，下列哪一表述是正确的？
+      </h2>
+</div>
+<!-- Reference Tag -->
+<div class="flex items-center space-x-1 text-slate-500 font-body-sm text-body-sm pt-space-xs">
+<span class="material-symbols-outlined text-[14px] text-slate-400">gavel</span>
+<span class="">考查要点：《民法典》第七百二十五条（买卖不破租赁规则）</span>
+</div>
+</div>
+<!-- Options List (Interactive Radio Items) -->
+<div class="space-y-gutter" id="options-group">
+<!-- Option A -->
+<div class="option-card cursor-pointer bg-white border border-slate-200 hover:border-slate-300 shadow-sm active:scale-[0.99] transition-all duration-200 rounded-[20px] p-space-md flex items-start space-x-space-md group" onclick="selectOption(this, 'A')">
+<div class="opt-indicator w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center flex-shrink-0 mt-0.5 font-label-md text-label-md text-slate-500 group-hover:text-slate-800 transition-colors">
+        A
+      </div>
+<div class="flex-1 min-w-0">
+<p class="opt-text font-body-md text-body-md text-slate-700 leading-snug">
+          买卖合同无效，因为侵犯了乙的优先购买权
+        </p>
+</div>
+</div>
+<!-- Option B -->
+<div class="option-card cursor-pointer bg-white border border-slate-200 hover:border-slate-300 shadow-sm active:scale-[0.99] transition-all duration-200 rounded-[20px] p-space-md flex items-start space-x-space-md group" onclick="selectOption(this, 'B')">
+<div class="opt-indicator w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center flex-shrink-0 mt-0.5 font-label-md text-label-md text-slate-500 group-hover:text-slate-800 transition-colors">
+        B
+      </div>
+<div class="flex-1 min-w-0">
+<p class="opt-text font-body-md text-body-md text-slate-700 leading-snug">
+          丙有权请求乙立即腾退房屋
+        </p>
+</div>
+</div>
+<!-- Option C (Default active / selected state) -->
+<div class="option-card cursor-pointer bg-emerald-50/70 border-2 border-emerald-500 shadow-[0_4px_16px_rgba(16,185,129,0.15)] active:scale-[0.99] transition-all duration-200 rounded-[20px] p-space-md flex items-start space-x-space-md group" onclick="selectOption(this, 'C')">
+<div class="opt-indicator w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center flex-shrink-0 mt-0.5 font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[18px] font-bold">check</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="opt-text font-body-md text-body-md text-slate-900 font-semibold leading-snug">
+          甲丙买卖合同有效，但原租赁合同对受让人丙继续有效（买卖不破租赁）
+        </p>
+<span class="selected-pill inline-block mt-2 bg-emerald-500/15 text-emerald-700 font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-semibold border border-emerald-500/20">
+          当前选中
+        </span>
+</div>
+</div>
+<!-- Option D -->
+<div class="option-card cursor-pointer bg-white border border-slate-200 hover:border-slate-300 shadow-sm active:scale-[0.99] transition-all duration-200 rounded-[20px] p-space-md flex items-start space-x-space-md group" onclick="selectOption(this, 'D')">
+<div class="opt-indicator w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center flex-shrink-0 mt-0.5 font-label-md text-label-md text-slate-500 group-hover:text-slate-800 transition-colors">
+        D
+      </div>
+<div class="flex-1 min-w-0">
+<p class="opt-text font-body-md text-body-md text-slate-700 leading-snug">
+          乙可要求甲丙之间的房屋过户登记予以撤销
+        </p>
+</div>
+</div>
+</div>
+<!-- AI Tutor Assistant Suggestion Banner -->
+<div class="bg-slate-50 border border-slate-200/80 rounded-[20px] p-space-md flex items-center justify-between shadow-sm">
+<div class="flex items-center space-x-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center flex-shrink-0 text-white shadow-[0_2px_8px_rgba(16,185,129,0.35)]">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-slate-900 font-semibold">蜂鸟 AI 助答就绪</div>
+<div class="font-body-sm text-body-sm text-slate-500 truncate">对物权变动与租赁权竞合存疑？</div>
+</div>
+</div>
+<button class="flex-shrink-0 bg-white border border-slate-200 hover:bg-slate-100 text-emerald-700 px-3 py-1.5 rounded-full font-label-md text-label-md flex items-center space-x-1 active:scale-95 transition-transform shadow-xs" onclick="toggleAiDrawer()" type="button">
+<span class="font-medium">向 AI 调取解析</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+<!-- Interactive AI Analysis Accordion Drawer (Hidden by default, toggled via action) -->
+<div class="hidden bg-slate-50 border border-slate-200 rounded-[20px] p-space-md space-y-space-sm transition-all duration-300" id="ai-drawer">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-emerald-700 font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+        AI 思路提示 (免答题惩罚)
+      </span>
+<button class="text-slate-400 hover:text-slate-600 text-[14px]" onclick="toggleAiDrawer()" type="button">收起</button>
+</div>
+<p class="font-body-sm text-body-sm text-slate-700 leading-relaxed">
+      根据《民法典》第725条，租赁物在承租人按照租赁合同占有期限内发生所有权变动的，不影响租赁合同的效力。出卖人未履行通知义务仅产生违约或赔偿责任，并不导致买卖合同无效或产权过户撤销。
+    </p>
+</div>
+<!-- Actions Bar -->
+<div class="pt-space-xs flex flex-col space-y-space-sm">
+<button class="w-full h-12 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-label-lg text-label-lg flex items-center justify-center space-x-2 shadow-[0_4px_16px_rgba(16,185,129,0.35)] active:scale-[0.98] transition-all" id="submit-btn" onclick="handleSubmit()" type="button">
+<span class="font-bold tracking-wide">确认并提交答案</span>
+<span class="material-symbols-outlined text-[20px] font-bold">task_alt</span>
+</button>
+<div class="flex items-center justify-between px-space-xs font-label-sm text-label-sm text-slate-500">
+<button class="flex items-center space-x-1 hover:text-slate-800 transition-colors py-1" type="button">
+<span class="material-symbols-outlined text-[14px]">flag</span>
+<span class="">标记题目以便复查</span>
+</button>
+<button class="flex items-center space-x-1 text-emerald-600 font-semibold hover:underline py-1" type="button">
+<span class="">跳过此题</span>
+<span class="material-symbols-outlined text-[14px]">skip_next</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Simple Quiz Micro-Interactions
+  function selectOption(el, optLetter) {
+    const cards = document.querySelectorAll('.option-card');
+    cards.forEach(card => {
+      card.classList.remove('bg-emerald-50/70', 'border-2', 'border-emerald-500', 'shadow-[0_4px_16px_rgba(16,185,129,0.15)]');
+      card.classList.add('bg-white', 'border', 'border-slate-200');
+
+      const pText = card.querySelector('.opt-text');
+      if (pText) {
+        pText.classList.remove('text-slate-900', 'font-semibold');
+        pText.classList.add('text-slate-700');
+      }
+
+      const ind = card.querySelector('.opt-indicator');
+      if (ind) {
+        ind.className = 'opt-indicator w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center flex-shrink-0 mt-0.5 font-label-md text-label-md text-slate-500 group-hover:text-slate-800 transition-colors';
+        const rawLetter = card.getAttribute('data-letter') || ind.innerText.trim();
+        card.setAttribute('data-letter', rawLetter);
+        ind.innerHTML = rawLetter;
+      }
+
+      const badge = card.querySelector('.selected-pill');
+      if (badge) badge.remove();
+    });
+
+    el.classList.remove('bg-white', 'border-slate-200');
+    el.classList.add('bg-emerald-50/70', 'border-2', 'border-emerald-500', 'shadow-[0_4px_16px_rgba(16,185,129,0.15)]');
+
+    const curPText = el.querySelector('.opt-text');
+    if (curPText) {
+      curPText.classList.remove('text-slate-700');
+      curPText.classList.add('text-slate-900', 'font-semibold');
+    }
+
+    const curInd = el.querySelector('.opt-indicator');
+    if (curInd) {
+      curInd.className = 'opt-indicator w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center flex-shrink-0 mt-0.5 font-label-md text-label-md shadow-sm';
+      curInd.innerHTML = '<span class="material-symbols-outlined text-[18px] font-bold">check</span>';
+    }
+
+    const contentDiv = el.querySelector('.flex-1');
+    if (contentDiv && !contentDiv.querySelector('.selected-pill')) {
+      const badge = document.createElement('span');
+      badge.className = 'selected-pill inline-block mt-2 bg-emerald-500/15 text-emerald-700 font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-semibold border border-emerald-500/20';
+      badge.innerText = '当前选中';
+      contentDiv.appendChild(badge);
+    }
+  }
+
+  function toggleAiDrawer() {
+    const drawer = document.getElementById('ai-drawer');
+    if (drawer) {
+      drawer.classList.toggle('hidden');
+    }
+  }
+
+  function handleSubmit() {
+    const btn = document.getElementById('submit-btn');
+    if (btn) {
+      btn.innerHTML = '<span>答案已提交 · 正在加载下题...</span>';
+      btn.classList.add('opacity-80', 'pointer-events-none');
+    }
+  }
+
+  // Simple countdown timer simulation
+  (function initTimer() {
+    let totalSecs = 4 * 60 + 18;
+    const timerDisplay = document.getElementById('quiz-timer');
+    if (!timerDisplay) return;
+
+    setInterval(() => {
+      if (totalSecs <= 0) return;
+      totalSecs--;
+      const m = String(Math.floor(totalSecs / 60)).padStart(2, '0');
+      const s = String(totalSecs % 60).padStart(2, '0');
+      timerDisplay.innerText = `${m}:${s}`;
+    }, 1000);
+  })();
+</script></main>
+
+<script src="/conbrie-ai-learning/app.js"></script></body></html>
