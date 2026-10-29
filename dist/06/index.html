@@ -1,0 +1,278 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-card-active": "#05c168", "on-secondary": "#ffffff", "tertiary": "#006398", "on-secondary-fixed": "#00210d", "secondary": "#006d38", "on-tertiary-fixed-variant": "#004b73", "inverse-on-surface": "#eef0ff", "surface": "#ffffff", "inverse-primary": "#4edea3", "outline-variant": "#e2e8f0", "on-surface": "#131b2e", "secondary-fixed": "#66fe9d", "mastery-weak": "#F43F5E", "on-background": "#131b2e", "outline": "#94a3b8", "tertiary-fixed": "#cce5ff", "secondary-container": "#dcfce7", "on-primary-fixed": "#002113", "primary-container": "#05c168", "secondary-fixed-dim": "#44e184", "surface-card-elevated": "#ffffff", "surface-container": "#f1f5f9", "surface-variant": "#f8fafc", "on-secondary-container": "#00743c", "on-tertiary-container": "#003c5e", "primary": "#05c168", "border-subtle": "#e2e8f0", "inverse-surface": "#283044", "tertiary-fixed-dim": "#93ccff", "text-on-primary": "#ffffff", "surface-container-highest": "#e2e8f0", "on-primary": "#ffffff", "on-primary-container": "#00422b", "on-surface-variant": "#475569", "surface-container-low": "#f8fafc", "surface-dim": "#f1f5f9", "on-error-container": "#93000a", "mastery-proficient": "#05c168", "text-secondary": "#64748b", "mastery-mastered": "#10B981", "background": "#ffffff", "on-secondary-fixed-variant": "#005229", "on-error": "#ffffff", "surface-tint": "#05c168", "surface-card": "#ffffff", "surface-deep": "#f8fafc", "mastery-learning": "#d97706", "tertiary-container": "#e0f2fe", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#005236", "surface-container-high": "#f1f5f9", "surface-bright": "#ffffff", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#001d31", "error": "#ba1a1a", "primary-fixed": "#6ffbbe", "primary-fixed-dim": "#4edea3", "error-container": "#ffdad6", "text-primary": "#0f172a" }, borderRadius: { DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px" }, spacing: { margin: "1.25rem", "space-sm": "0.5rem", "space-lg": "1.25rem", "space-2xl": "2.5rem", "space-xs": "0.25rem", "space-xl": "1.75rem", gutter: "0.75rem", "space-md": "1rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"], "body-lg": ["Inter"] }, fontSize: { "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "label-sm": ["10px", { lineHeight: "12px", letterSpacing: "0.02em", fontWeight: "700" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-md": ["20px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg": ["24px", { lineHeight: "30px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-lg": ["14px", { lineHeight: "18px", fontWeight: "600" }], "display-hero": ["30px", { lineHeight: "36px", letterSpacing: "-0.03em", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }] } } } };</script><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;background-color:#ffffff;color:#0f172a;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<link rel="icon" type="image/svg+xml" href="/conbrie-ai-learning/favicon.svg"><style>html{background:#eef2f7}body{width:100%;max-width:430px;margin:0 auto!important;box-shadow:0 0 48px rgba(15,23,42,.08)}(max-width:430px){body{box-shadow:none}}</style></head><body class="bg-[#ffffff] font-body-md text-body-md text-slate-800 flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-white/90 backdrop-blur-xl border-b border-slate-100 shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm min-w-0"><img alt="蜂鸟轻记 Conbrie Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XAC030XFN3mscMuBtxixsfXema1MoWMKQStgWOxsClF0dpqTyzDgnhhcxLGYVp7N3sl9CuA9x5v3lOL1pIhNbq2Mc4knyIZWqf44lkixTIEa1K8hj-8A_jQkpuYncukU1tNw4uuYSfuaqTQH0kioxoY2mKXaChtdzeD3XHOR0ObaMPOtiegyip5IdQPOkSV_epYMiSU8oYW0QpGS1TB58ld0I70xLg0t7ESV7A3otSvS_3AqcBTKfELPE"><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-emerald-600 font-bold tracking-wider uppercase">蜂鸟轻记 AI</span><h1 class="font-headline-sm text-headline-sm text-slate-900 font-bold truncate">AI 智能导师</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="搜索" class="w-11 h-11 rounded-full flex items-center justify-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="通知" class="w-11 h-11 rounded-full flex items-center justify-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors relative" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-emerald-500 ring-2 ring-white"></span></button><div class="flex items-center justify-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-slate-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrpKJ-Ex9x8oV-MLmNCIAHC5BM7d5m32pM98a71-37LE9dnfEQVK01b_XyB0hADRiXwvf2i7UopOVvMb3HDQAhbVq9EFztvQwiPyRzN7x2kqDamKQqJi2x4jdx8RhSKQnizokcClV_FrtNhlJSKBPhW1nFq9pK_4iFN_tZevu1s2YBfn-JfKMJ9F_y4D23sJfOymKOzoAGRZyH5XKJIgprzP7RV6h5ci4DL-oSzSsFFez8sH_13vr9"></div></div></div></header><main class="flex-1 flex flex-col w-full pt-16 pb-28 bg-[#ffffff]"><div class="flex flex-col w-full">
+<!-- Scope Context Indicator Banner -->
+<div class="px-margin pt-3 pb-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs bg-slate-50 border border-slate-200/80 px-3 py-1.5 rounded-full shadow-xs">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-slate-500">当前基于</span>
+<span class="font-label-sm text-label-sm text-emerald-700 font-semibold truncate max-w-[170px]">「民法学核心精要」专题</span>
+<span class="font-label-sm text-label-sm text-slate-500">回答</span>
+</div>
+<button class="flex items-center gap-1 text-slate-600 hover:text-slate-900 px-2.5 py-1.5 rounded-full bg-slate-100/90 hover:bg-slate-200/80 border border-slate-200/60 transition-colors text-label-sm font-label-sm" type="button">
+<span class="material-symbols-outlined text-[15px]">tune</span>
+<span class="font-medium">切换范围</span>
+</button>
+</div>
+<!-- Chat History Scrollable Area -->
+<div class="flex flex-col gap-space-lg px-margin pb-32">
+<!-- Context Anchor Timestamp -->
+<div class="flex items-center justify-center my-space-xs">
+<span class="font-label-sm text-label-sm text-slate-500 bg-slate-100 border border-slate-200/60 px-3 py-1 rounded-full">
+        今日 14:28 · 知识库问答联想中
+      </span>
+</div>
+<!-- User Chat Bubble -->
+<div class="flex flex-col items-end gap-1.5 pl-10">
+<div class="flex items-center gap-1.5 mr-1">
+<span class="font-label-sm text-label-sm text-slate-500 font-medium">你</span>
+<span class="font-label-sm text-label-sm text-slate-400">14:28</span>
+</div>
+<div class="bg-emerald-50 text-slate-900 border border-emerald-100 px-4 py-3 rounded-2xl rounded-tr-sm shadow-sm leading-relaxed font-body-md text-body-md text-left">
+        动产善意取得中，如果转让人是将借来的电脑卖出，第三人构成善意取得吗？
+      </div>
+</div>
+<!-- AI Tutor Response Area -->
+<div class="flex flex-col items-start gap-2.5 pr-1">
+<!-- AI Meta Header -->
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-emerald-500 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-white text-[18px]">smart_toy</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-slate-900 font-bold">蜂鸟轻记 AI 导师</span>
+<span class="font-label-sm text-label-sm text-emerald-700 font-semibold px-1.5 py-0.5 rounded-md bg-emerald-50 border border-emerald-200/60">民法助手</span>
+</div>
+<span class="font-label-sm text-label-sm text-slate-400 ml-auto">刚刚</span>
+</div>
+<!-- AI Card Body -->
+<div class="bg-white rounded-2xl p-4 shadow-[0_2px_12px_rgba(0,0,0,0.06)] border border-slate-200 flex flex-col gap-3.5 w-full">
+<!-- Section 1: 简要结论 Highlight Card -->
+<div class="bg-emerald-50/80 border border-emerald-200/80 rounded-xl p-3 flex items-start gap-2.5">
+<div class="w-6 h-6 rounded-full bg-emerald-500 flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
+<span class="material-symbols-outlined text-white text-[16px]">check</span>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<span class="font-label-sm text-label-sm text-emerald-800 font-bold uppercase tracking-wider">简要结论</span>
+<p class="font-body-md text-body-md text-slate-900 font-semibold leading-snug">
+              构成善意取得。前提是第三人主观不知情且支付了合理对价并已完成交付。
+            </p>
+</div>
+</div>
+<!-- Section 2: 概念与规则解析 Detailed Card -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-1.5 text-slate-700">
+<span class="material-symbols-outlined text-[17px] text-emerald-600">menu_book</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide font-bold text-slate-700">概念与规则深度解析</span>
+</div>
+<div class="font-body-md text-body-md text-slate-700 leading-relaxed space-y-2.5 bg-slate-50 border border-slate-200/80 p-3.5 rounded-xl">
+<p class="">
+<strong class="text-slate-900 font-semibold">1. 无权处分性质：</strong>借用人仅对电脑享有<span class="text-emerald-700 font-semibold">合法占有权</span>，但无处分权。借用人未经同意将其转让，属于典型的<span class="text-amber-700 font-semibold">无权处分行为</span>。
+            </p>
+<p class="">
+<strong class="text-slate-900 font-semibold">2. 法律规范适用：</strong>依据<span class="text-sky-700 font-semibold">《中华人民共和国民法典》第 311 条</span>，只要受让第三人满足：
+            </p>
+<div class="grid grid-cols-1 gap-1.5 pl-2 font-body-sm text-body-sm text-slate-600">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+<span class="">受让时为善意（不知情且无重大过失）</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+<span class="">以合理的价格转让（支付合理对价）</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+<span class="">已完成交付（转移动产占有）</span>
+</div>
+</div>
+<p class="pt-1">
+              善意第三人即可<span class="text-emerald-700 font-semibold">原始取得</span>该电脑的所有权；原所有权人不得请求第三人返还原物，只能向出卖人主张侵权损害赔偿或违约责任。
+            </p>
+</div>
+</div>
+<!-- Section 3: Visual Mind-Anchor Illustration -->
+<div class="bg-slate-50 border border-slate-200 rounded-xl p-3 flex items-center justify-between gap-3">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-slate-500 font-medium">三方利益平衡模型</span>
+<span class="font-label-md text-label-md text-slate-900 font-semibold truncate">所有权动态安全保护机制</span>
+</div>
+<div class="shrink-0 flex items-center gap-1.5 bg-white border border-emerald-200/80 px-2.5 py-1.5 rounded-lg text-emerald-700 text-label-sm font-label-sm shadow-xs font-semibold">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">visibility</span>
+<span class="">图解关系</span>
+</div>
+</div>
+<!-- Section 4: 快捷行动操作 Action Pills (PRD G3 Mandate) -->
+<div class="pt-1 border-t-0 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-slate-500 uppercase tracking-wider font-semibold">行动工具箱 · 即刻转化</span>
+<span class="font-label-sm text-label-sm text-emerald-600 font-semibold">已同步 1 个考点</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<!-- Action 1: 生成知识卡 -->
+<button class="flex items-center gap-2 bg-white hover:bg-emerald-50/50 border border-slate-200 hover:border-emerald-300 active:scale-[0.98] transition-all p-2.5 rounded-xl text-left shadow-xs group" id="btn-gen-card" type="button">
+<div class="w-7 h-7 rounded-lg bg-emerald-100 flex items-center justify-center shrink-0 group-hover:bg-emerald-500 transition-colors">
+<span class="material-symbols-outlined text-emerald-700 group-hover:text-white text-[18px]">bolt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-slate-900 font-bold truncate">生成知识卡</span>
+<span class="font-label-sm text-label-sm text-slate-500 truncate">提取核心考点</span>
+</div>
+</button>
+<!-- Action 2: 变式 Quiz -->
+<button class="flex items-center gap-2 bg-white hover:bg-sky-50/50 border border-slate-200 hover:border-sky-300 active:scale-[0.98] transition-all p-2.5 rounded-xl text-left shadow-xs group" id="btn-gen-quiz" type="button">
+<div class="w-7 h-7 rounded-lg bg-sky-100 flex items-center justify-center shrink-0 group-hover:bg-sky-600 transition-colors">
+<span class="material-symbols-outlined text-sky-700 group-hover:text-white text-[18px]">track_changes</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-slate-900 font-bold truncate">变式测验</span>
+<span class="font-label-sm text-label-sm text-slate-500 truncate">实时自测通关</span>
+</div>
+</button>
+<!-- Action 3: 今日复习计划 -->
+<button class="flex items-center gap-2 bg-white hover:bg-teal-50/50 border border-slate-200 hover:border-teal-300 active:scale-[0.98] transition-all p-2.5 rounded-xl text-left shadow-xs group" id="btn-add-review" type="button">
+<div class="w-7 h-7 rounded-lg bg-emerald-100/70 flex items-center justify-center shrink-0 group-hover:bg-emerald-600 transition-colors">
+<span class="material-symbols-outlined text-emerald-800 group-hover:text-white text-[18px]">edit_calendar</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-slate-900 font-bold truncate">加入复习</span>
+<span class="font-label-sm text-label-sm text-slate-500 truncate">今日复习队列</span>
+</div>
+</button>
+<!-- Action 4: 生活实例拓展 -->
+<button class="flex items-center gap-2 bg-white hover:bg-slate-100/80 border border-slate-200 hover:border-slate-300 active:scale-[0.98] transition-all p-2.5 rounded-xl text-left shadow-xs group" id="btn-real-example" type="button">
+<div class="w-7 h-7 rounded-lg bg-slate-100 flex items-center justify-center shrink-0 group-hover:bg-slate-700 transition-colors">
+<span class="material-symbols-outlined text-slate-600 group-hover:text-white text-[18px]">search</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-slate-900 font-bold truncate">举个生活实例</span>
+<span class="font-label-sm text-label-sm text-slate-500 truncate">二手转卖场景</span>
+</div>
+</button>
+</div>
+</div>
+<!-- AI Message Footer Tools -->
+<div class="flex items-center justify-between pt-1 border-t border-slate-100 text-slate-500">
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-slate-100 hover:text-slate-800 transition-colors" type="button">
+<span class="material-symbols-outlined text-[17px]">thumb_up</span>
+</button>
+<button class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-slate-100 hover:text-slate-800 transition-colors" type="button">
+<span class="material-symbols-outlined text-[17px]">thumb_down</span>
+</button>
+<button class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-slate-100 hover:text-slate-800 transition-colors" type="button">
+<span class="material-symbols-outlined text-[17px]">content_copy</span>
+</button>
+<button class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-slate-100 hover:text-slate-800 transition-colors" type="button">
+<span class="material-symbols-outlined text-[17px]">share</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-slate-400">民法典研读助手 2.4 版</span>
+</div>
+</div>
+<!-- Quick Suggestion Pill Row -->
+<div class="flex items-center gap-2 overflow-x-auto w-full py-1 -mx-1 px-1">
+<button class="shrink-0 bg-white hover:bg-slate-50 border border-slate-200 active:scale-95 text-slate-700 hover:text-emerald-600 px-3 py-1.5 rounded-full font-label-md text-label-md transition-all shadow-xs" type="button">
+          💭 如果是遗失物电脑被卖掉呢？
+        </button>
+<button class="shrink-0 bg-white hover:bg-slate-50 border border-slate-200 active:scale-95 text-slate-700 hover:text-emerald-600 px-3 py-1.5 rounded-full font-label-md text-label-md transition-all shadow-xs" type="button">
+          ⚖️ “合理对价”具体以什么标准判定？
+        </button>
+</div>
+</div>
+</div>
+<!-- Bottom Floating Input Bar Dock -->
+<div class="fixed bottom-20 inset-x-0 px-margin z-40">
+<div class="bg-white/95 backdrop-blur-xl rounded-2xl p-2 shadow-[0_8px_30px_rgba(0,0,0,0.08)] border border-slate-200/90 flex items-center gap-2">
+<!-- Voice Multi-Modal Trigger -->
+<button aria-label="语音提问" class="w-10 h-10 rounded-full flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-600 hover:text-slate-900 transition-colors shrink-0" type="button">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+<!-- Attachment / Note Reference -->
+<button aria-label="关联笔记或教材" class="w-10 h-10 rounded-full flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-600 hover:text-slate-900 transition-colors shrink-0" type="button">
+<span class="material-symbols-outlined text-[20px]">attach_file</span>
+</button>
+<!-- Input Field -->
+<div class="flex-1 min-w-0">
+<input class="w-full bg-transparent text-slate-900 placeholder:text-slate-400 font-body-md text-body-md focus:outline-none px-1" id="chat-input" placeholder="向 AI 导师提问或引用笔记..." type="text">
+</div>
+<!-- Send Action Button -->
+<button aria-label="发送问题" class="w-10 h-10 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center shrink-0 active:scale-95 shadow-[0_4px_12px_rgba(5,193,104,0.3)] transition-transform" id="btn-send" type="button">
+<span class="material-symbols-outlined text-[20px] font-bold">arrow_upward</span>
+</button>
+</div>
+</div>
+<!-- Floating Feedback Toast Notification -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 bg-white/95 backdrop-blur-md border border-slate-200 px-4 py-2.5 rounded-full shadow-lg flex items-center gap-2 opacity-0 pointer-events-none transition-all duration-300 z-50" id="action-toast">
+<span class="material-symbols-outlined text-emerald-600 text-[18px]">check_circle</span>
+<span class="font-label-md text-label-md text-slate-800 font-medium" id="toast-text">操作已完成</span>
+</div>
+</div>
+<script>
+  (function() {
+    const toast = document.getElementById('action-toast');
+    const toastText = document.getElementById('toast-text');
+    let toastTimer = null;
+
+    function showToast(msg) {
+      if (toastTimer) clearTimeout(toastTimer);
+      toastText.textContent = msg;
+      toast.classList.remove('opacity-0', 'pointer-events-none', '-translate-y-2');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      toastTimer = setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'pointer-events-none', '-translate-y-2');
+      }, 2200);
+    }
+
+    const btnCard = document.getElementById('btn-gen-card');
+    if (btnCard) {
+      btnCard.addEventListener('click', () => {
+        showToast('⚡️ 考点知识卡已提取并存入复习池');
+      });
+    }
+
+    const btnQuiz = document.getElementById('btn-gen-quiz');
+    if (btnQuiz) {
+      btnQuiz.addEventListener('click', () => {
+        showToast('🎯 正在生成民法变式 Quiz 测验题...');
+      });
+    }
+
+    const btnReview = document.getElementById('btn-add-review');
+    if (btnReview) {
+      btnReview.addEventListener('click', () => {
+        showToast('📝 已加入今日艾宾浩斯间隔复习清单');
+      });
+    }
+
+    const btnRealExample = document.getElementById('btn-real-example');
+    if (btnRealExample) {
+      btnRealExample.addEventListener('click', () => {
+        showToast('🔍 正在整理「借用转出质与二次销售」生活案例...');
+      });
+    }
+
+    const btnSend = document.getElementById('btn-send');
+    const chatInput = document.getElementById('chat-input');
+    if (btnSend && chatInput) {
+      const handleSend = () => {
+        const val = chatInput.value.trim();
+        if (val) {
+          showToast(`已发送: "${val.slice(0, 10)}..."`);
+          chatInput.value = '';
+        }
+      };
+      btnSend.addEventListener('click', handleSend);
+      chatInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') handleSend();
+      });
+    }
+  })();
+</script></main><div class="fixed bottom-0 w-full z-50 pb-safe pointer-events-none"><div class="px-margin pb-4 w-full flex justify-center"><nav class="pointer-events-auto w-full max-w-[390px] h-16 rounded-full bg-white/95 backdrop-blur-xl border border-slate-200/80 shadow-[0_8px_30px_rgba(0,0,0,0.08)] px-space-sm flex items-center justify-around" data-active-classes="bg-emerald-500 text-white shadow-[0_4px_16px_rgba(5,193,104,0.3)] font-bold"><a class="flex flex-col items-center justify-center gap-0.5 px-3 py-1.5 rounded-full min-w-[56px] min-h-[44px] text-slate-500 hover:text-slate-900 transition-all duration-200" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-sm text-label-sm">首页</span></a><a class="flex flex-col items-center justify-center gap-0.5 px-3 py-1.5 rounded-full min-w-[56px] min-h-[44px] text-slate-500 hover:text-slate-900 transition-all duration-200" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[22px]">local_library</span><span class="font-label-sm text-label-sm">知识库</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 px-3 py-1.5 rounded-full min-w-[56px] min-h-[44px] transition-all duration-200 bg-emerald-500 text-white shadow-[0_4px_16px_rgba(5,193,104,0.3)] font-bold" data-path="ai-tutor" href="#"><span class="material-symbols-outlined text-[22px]">auto_awesome</span><span class="font-label-sm text-label-sm">AI 助手</span></a><a class="flex flex-col items-center justify-center gap-0.5 px-3 py-1.5 rounded-full min-w-[56px] min-h-[44px] text-slate-500 hover:text-slate-900 transition-all duration-200" data-path="mastery-profile" href="#"><span class="material-symbols-outlined text-[22px]">query_stats</span><span class="font-label-sm text-label-sm">我的</span></a></nav></div></div>
+
+<script src="/conbrie-ai-learning/app.js"></script></body></html>
