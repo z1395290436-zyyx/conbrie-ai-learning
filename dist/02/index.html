@@ -1,0 +1,375 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-primary": "#ffffff",
+          "on-secondary-fixed-variant": "#005229",
+          "error-container": "#ffdad6",
+          "inverse-on-surface": "#eef0ff",
+          "on-primary-fixed-variant": "#005236",
+          "surface-container-highest": "#dae2fd",
+          "surface-container-lowest": "#ffffff",
+          "mastery-mastered": "#10b981",
+          "text-muted": "#64748b",
+          "background": "#ffffff",
+          "surface-container": "#f1f5f9",
+          "surface-dim": "#f8fafc",
+          "text-inverse": "#ffffff",
+          "tertiary-fixed-dim": "#93ccff",
+          "surface-bright": "#ffffff",
+          "primary": "#006c49",
+          "on-tertiary-fixed-variant": "#004b73",
+          "secondary": "#006d38",
+          "on-background": "#0f172a",
+          "tertiary": "#006398",
+          "tertiary-container": "#4aaaef",
+          "on-secondary-container": "#00743c",
+          "surface-variant": "#f1f5f9",
+          "text-secondary": "#64748b",
+          "primary-fixed-dim": "#4edea3",
+          "surface": "#ffffff",
+          "surface-tertiary": "#f1f5f9",
+          "primary-fixed": "#6ffbbe",
+          "on-tertiary": "#ffffff",
+          "surface-tint": "#006c49",
+          "on-tertiary-fixed": "#001d31",
+          "secondary-fixed-dim": "#44e184",
+          "on-primary-container": "#00422b",
+          "border-subtle": "#e2e8f0",
+          "inverse-primary": "#4edea3",
+          "mastery-proficient": "#05c168",
+          "tertiary-fixed": "#cce5ff",
+          "inverse-surface": "#283044",
+          "secondary-container": "#66fe9d",
+          "on-tertiary-container": "#003c5e",
+          "on-error": "#ffffff",
+          "surface-container-low": "#f8fafc",
+          "on-primary-fixed": "#002113",
+          "surface-secondary": "#f8fafc",
+          "error": "#ba1a1a",
+          "secondary-fixed": "#66fe9d",
+          "on-secondary-fixed": "#00210d",
+          "mastery-learning": "#f59e0b",
+          "mastery-weak": "#f43f5e",
+          "outline-variant": "#bbcabf",
+          "on-surface-variant": "#3c4a42",
+          "primary-container": "#10b981",
+          "on-secondary": "#ffffff",
+          "on-surface": "#0f172a",
+          "on-error-container": "#93000a",
+          "outline": "#6c7a71",
+          "surface-container-high": "#e2e8f0",
+          "text-primary": "#0f172a",
+          "border-strong": "#cbd5e1"
+        },
+        borderRadius: {
+          DEFAULT: "1rem",
+          lg: "2rem",
+          xl: "3rem",
+          full: "9999px"
+        },
+        spacing: {
+          gutter: "0.75rem",
+          "space-sm": "0.5rem",
+          "space-lg": "1.25rem",
+          "space-xs": "0.25rem",
+          "space-md": "1rem",
+          "space-xl": "1.75rem",
+          margin: "1.25rem",
+          "space-2xl": "2.5rem"
+        },
+        fontFamily: {
+          "headline-lg": ["Plus Jakarta Sans"],
+          "headline-sm": ["Plus Jakarta Sans"],
+          "body-md": ["Inter"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "label-sm": ["Plus Jakarta Sans"],
+          "label-md": ["Plus Jakarta Sans"],
+          "body-sm": ["Inter"],
+          "body-lg": ["Inter"],
+          "label-lg": ["Plus Jakarta Sans"],
+          "display-hero": ["Plus Jakarta Sans"]
+        },
+        fontSize: {
+          "headline-lg": ["24px", { lineHeight: "30px", letterSpacing: "-0.02em", fontWeight: "700" }],
+          "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }],
+          "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }],
+          "headline-md": ["20px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "600" }],
+          "label-sm": ["10px", { lineHeight: "12px", letterSpacing: "0.02em", fontWeight: "700" }],
+          "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "600" }],
+          "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }],
+          "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+          "label-lg": ["14px", { lineHeight: "18px", fontWeight: "600" }],
+          "display-hero": ["30px", { lineHeight: "36px", letterSpacing: "-0.03em", fontWeight: "700" }]
+        }
+      }
+    }
+  };
+</script><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;background-color:#ffffff;color:#0f172a;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<link rel="icon" type="image/svg+xml" href="/conbrie-ai-learning/favicon.svg"><style>html{background:#eef2f7}body{width:100%;max-width:430px;margin:0 auto!important;box-shadow:0 0 48px rgba(15,23,42,.08)}(max-width:430px){body{box-shadow:none}}</style></head><body class="bg-white font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-white/85 backdrop-blur-xl border-b border-slate-100 shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm min-w-0"><img alt="蜂鸟轻记 Conbrie Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XAC030XFN3mscMuBtxixsfXema1MoWMKQStgWOxsClF0dpqTyzDgnhhcxLGYVp7N3sl9CuA9x5v3lOL1pIhNbq2Mc4knyIZWqf44lkixTIEa1K8hj-8A_jQkpuYncukU1tNw4uuYSfuaqTQH0kioxoY2mKXaChtdzeD3XHOR0ObaMPOtiegyip5IdQPOkSV_epYMiSU8oYW0QpGS1TB58ld0I70xLg0t7ESV7A3otSvS_3AqcBTKfELPE"><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-primary-container tracking-wider uppercase">蜂鸟轻记 AI</span><h1 class="font-headline-sm text-headline-sm text-text-primary truncate">知识库</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="搜索" class="w-11 h-11 rounded-full flex items-center justify-center text-text-secondary hover:text-text-primary hover:bg-slate-100 transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="通知" class="w-11 h-11 rounded-full flex items-center justify-center text-text-secondary hover:text-text-primary hover:bg-slate-100 transition-colors relative" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary-container ring-2 ring-white"></span></button><div class="flex items-center justify-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-slate-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrpKJ-Ex9x8oV-MLmNCIAHC5BM7d5m32pM98a71-37LE9dnfEQVK01b_XyB0hADRiXwvf2i7UopOVvMb3HDQAhbVq9EFztvQwiPyRzN7x2kqDamKQqJi2x4jdx8RhSKQnizokcClV_FrtNhlJSKBPhW1nFq9pK_4iFN_tZevu1s2YBfn-JfKMJ9F_y4D23sJfOymKOzoAGRZyH5XKJIgprzP7RV6h5ci4DL-oSzSsFFez8sH_13vr9"></div></div></div></header><main class="flex-1 flex flex-col w-full pt-16 pb-28 bg-white"><div class="flex flex-col w-full px-margin pb-10 space-y-space-lg">
+<!-- Knowledge Base Overview & Meta Header -->
+<div class="flex flex-col space-y-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#10b981]"></span>
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-widest font-bold">知识矩阵</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary">更新于 10 分钟前</span>
+</div>
+<div class="flex items-baseline justify-between">
+<h2 class="font-display-hero text-display-hero text-text-primary tracking-tight">知识库</h2>
+<span class="font-label-md text-label-md text-primary bg-emerald-50 border border-emerald-200/60 px-2.5 py-1 rounded-full font-semibold">3 个专题进行中</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+      3 个备考专题 · 24 篇笔记 · 418 张闪卡
+    </p>
+</div>
+<!-- Search Input Container -->
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-text-secondary">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full h-12 pl-11 pr-10 rounded-full bg-slate-50 border border-border-subtle text-text-primary placeholder:text-text-secondary font-body-md text-body-md outline-none transition-all duration-200 focus:bg-white focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 shadow-sm" placeholder="搜索知识点、卡片、笔记或概念..." type="search">
+<button aria-label="语音或智能筛选" class="absolute inset-y-0 right-1 pr-2.5 flex items-center text-text-secondary hover:text-text-primary" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<!-- Horizontal Scrollable Category Filter Pills -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5 -mx-margin px-margin">
+<button class="filter-pill flex items-center gap-1.5 px-4 py-2 rounded-full font-label-md text-label-md whitespace-nowrap transition-all duration-200 bg-primary-container text-white shadow-[0_4px_14px_rgba(16,185,129,0.3)] font-bold" data-category="all">
+<span class="">全部</span>
+<span class="bg-black/15 text-white px-1.5 py-0.2 rounded-full font-label-sm text-label-sm">4</span>
+</button>
+<button class="filter-pill flex items-center gap-1.5 px-4 py-2 rounded-full font-label-md text-label-md whitespace-nowrap transition-all duration-200 bg-slate-100 hover:bg-slate-200/80 text-text-secondary hover:text-text-primary border border-slate-200/60" data-category="topics">
+<span class="">专题</span>
+<span class="bg-white text-text-secondary px-1.5 py-0.2 rounded-full font-label-sm text-label-sm border border-slate-200/50">3</span>
+</button>
+<button class="filter-pill flex items-center gap-1.5 px-4 py-2 rounded-full font-label-md text-label-md whitespace-nowrap transition-all duration-200 bg-slate-100 hover:bg-slate-200/80 text-text-secondary hover:text-text-primary border border-slate-200/60" data-category="notes">
+<span class="">笔记</span>
+<span class="bg-white text-text-secondary px-1.5 py-0.2 rounded-full font-label-sm text-label-sm border border-slate-200/50">24</span>
+</button>
+<button class="filter-pill flex items-center gap-1.5 px-4 py-2 rounded-full font-label-md text-label-md whitespace-nowrap transition-all duration-200 bg-slate-100 hover:bg-slate-200/80 text-text-secondary hover:text-text-primary border border-slate-200/60" data-category="imports">
+<span class="">导入资料</span>
+<span class="bg-white text-text-secondary px-1.5 py-0.2 rounded-full font-label-sm text-label-sm border border-slate-200/50">8</span>
+</button>
+</div>
+<!-- Section Title -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">folder_special</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold">核心备考专题</h3>
+</div>
+<button class="flex items-center gap-1 font-label-sm text-label-sm text-text-secondary hover:text-primary transition-colors" type="button">
+<span class="">智能排序</span>
+<span class="material-symbols-outlined text-[16px]">swap_vert</span>
+</button>
+</div>
+<!-- Topic Cards Grid/Stack -->
+<div class="flex flex-col space-y-3.5">
+<!-- CARD 1: Hero Electric Emerald Card (#10b981 / vibrant brand green) -->
+<div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#10b981] to-[#059669] text-white p-5 shadow-[0_12px_24px_rgba(16,185,129,0.22)] transition-all duration-300 hover:scale-[1.01] active:scale-[0.99] cursor-pointer">
+<!-- Decorative Background Accent Circles -->
+<div class="absolute -right-8 -top-8 w-36 h-36 rounded-full bg-white/20 blur-xl pointer-events-none"></div>
+<div class="absolute right-4 bottom-2 opacity-15 pointer-events-none">
+<span class="material-symbols-outlined text-[110px] text-white">gavel</span>
+</div>
+<div class="relative z-10 flex flex-col space-y-4">
+<!-- Top Tags & Badges -->
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/15 backdrop-blur-md font-label-sm text-label-sm text-white font-bold">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+            法考特训营 · 重点冲刺
+          </span>
+<div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[18px]">bookmark</span>
+</div>
+</div>
+<!-- Title & Subtitle -->
+<div class="space-y-1 pr-10">
+<h4 class="font-headline-lg text-headline-lg text-white tracking-tight font-extrabold leading-tight">
+            2025 国家法律职业资格考试
+          </h4>
+<p class="font-body-sm text-body-sm text-emerald-50 font-medium">
+            客观题精选体系化通关专栏
+          </p>
+</div>
+<!-- Visual Progress Ring + Stats Row -->
+<div class="pt-1 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<!-- Inline Mini Progress Donut SVG -->
+<div class="relative w-11 h-11 flex items-center justify-center">
+<svg class="w-11 h-11 -rotate-90" viewBox="0 0 36 36">
+<path class="text-black/20" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-white" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="74, 100" stroke-linecap="round" stroke-width="3.8"></path>
+</svg>
+<span class="absolute font-label-sm text-label-sm text-white font-bold">74%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-white font-bold">98 篇核心资料</span>
+<span class="font-body-sm text-body-sm text-emerald-100">累计专注 42 小时</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center shadow-md group-hover:translate-x-0.5 transition-transform">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 2: White Card with subtle border and shadow -->
+<div class="group relative rounded-2xl bg-white border border-border-subtle p-4 shadow-[0_2px_8px_rgba(15,23,42,0.04)] transition-all duration-200 hover:shadow-md hover:border-slate-300 active:scale-[0.99] cursor-pointer">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3 min-w-0">
+<!-- Thumbnail / Visual Anchor -->
+<div class="relative flex-shrink-0 w-12 h-12 rounded-xl overflow-hidden bg-slate-100 border border-slate-200/70 flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Constitutional law and jurisprudence abstract concept book minimal dark aesthetic with emerald green neon ambient glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQPBAiSsZBguWEuqOZunvuPC94yo7vN6OwArTrImG-q6EvjHyewVVZYFLXXbqPXyr85grDnuFFmsnR9qKP7lk-z3S6k97-btZpPD1a95202ApONyBopgcw70QQynjcMaCH1nlxKmhJw309ROpFdHpLxuYHr3Ow75keIHXZwarnd_n4nDStyYvJ9DjTnlnSc8OWgL_O4CpyC9iNAqlURKadHNtEGaRn9X-Ukw8bCkwfM4UgjuKAS9dd">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+<span class="material-symbols-outlined absolute text-white text-[20px]">balance</span>
+</div>
+<!-- Card Content -->
+<div class="flex flex-col min-w-0 space-y-1">
+<div class="flex items-center gap-2">
+<h4 class="font-headline-sm text-headline-sm text-text-primary truncate font-bold">法理学与宪法核心精要</h4>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary truncate">
+              42 张卡片 · 掌握度 86%
+            </p>
+</div>
+</div>
+<!-- Status Tag -->
+<span class="flex-shrink-0 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200/60 text-mastery-proficient font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-mastery-proficient"></span>
+          熟练
+        </span>
+</div>
+<!-- Linear Progress Bar -->
+<div class="mt-4 pt-1 flex items-center gap-3">
+<div class="flex-1 h-1.5 rounded-full bg-slate-100 overflow-hidden">
+<div class="h-full rounded-full bg-primary-container" style="width: 86%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary font-medium">86%</span>
+</div>
+</div>
+<!-- CARD 3: White Card - 刑法进阶案例库 (Learning state with review prompt) -->
+<div class="group relative rounded-2xl bg-white border border-border-subtle p-4 shadow-[0_2px_8px_rgba(15,23,42,0.04)] transition-all duration-200 hover:shadow-md hover:border-slate-300 active:scale-[0.99] cursor-pointer">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3 min-w-0">
+<div class="relative flex-shrink-0 w-12 h-12 rounded-xl overflow-hidden bg-slate-100 border border-slate-200/70 flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Criminal law case file legal library dark mode with glowing emerald subtle lighting minimalist conceptual" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc4zCfBAXwkZkO3ByNgFS-qeD5Hh68M_kPtlsS-4ehJp1x2AqzAjxJgGPUPLtYigrv4BVERHKI3vfGZwtCQiLqY7FPuGdQ34IlNC6AdROQOj4CdHpkxmO0oJPMseL_WohBgsZXB4c_5MHQrTDOTkJeyR9UgnkOF7xDm9Nt-J7eAsLNYJC1IHRmkwqJSjUfzJr3edkQDTEWhmRAh_HNh3EiuvwArYC6eLs9Z1bEazxrAuGlyytIBtmI">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+<span class="material-symbols-outlined absolute text-white text-[20px]">psychology_alt</span>
+</div>
+<div class="flex flex-col min-w-0 space-y-1">
+<h4 class="font-headline-sm text-headline-sm text-text-primary truncate font-bold">刑法学进阶案例库</h4>
+<p class="font-body-sm text-body-sm text-text-secondary truncate">
+              64 张卡片 · 掌握度 52%
+            </p>
+</div>
+</div>
+<!-- Status Tag (Learning) -->
+<span class="flex-shrink-0 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-50 border border-amber-200/70 text-mastery-learning font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-mastery-learning animate-pulse"></span>
+          学习中
+        </span>
+</div>
+<!-- Progress + Urgent review chip -->
+<div class="mt-4 pt-1 flex items-center justify-between gap-3">
+<div class="flex-1 flex items-center gap-2.5">
+<div class="flex-1 h-1.5 rounded-full bg-slate-100 overflow-hidden">
+<div class="h-full rounded-full bg-mastery-learning" style="width: 52%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary font-medium">52%</span>
+</div>
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-rose-50 border border-rose-200/60 text-mastery-weak font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">alarm</span>
+          3 项待复习
+        </div>
+</div>
+</div>
+<!-- CARD 4: White Card - 法律英语与泛读 -->
+<div class="group relative rounded-2xl bg-white border border-border-subtle p-4 shadow-[0_2px_8px_rgba(15,23,42,0.04)] transition-all duration-200 hover:shadow-md hover:border-slate-300 active:scale-[0.99] cursor-pointer">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3 min-w-0">
+<div class="relative flex-shrink-0 w-12 h-12 rounded-xl overflow-hidden bg-slate-100 border border-slate-200/70 flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Legal English terminology vocabulary dictionary flashcards high tech dark green visual" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVInHpi6iXbEPR7w_vW-xnw_omF5HIKFjA4nqs__vfLaUrP05hMdjEF9LANlno7vl9o0hQjRXms5ls42dseB_GZ8MQ5fHO08fJ3bBgnKLQ0Nuvn4ZWqt_-vf2KKpfisEgJRpmfkDwgEB3CqjPmTb-5JLje_54I-D9OVU5SREHye3xbv4f-0a2BxTxsSaFzVQw1pQYV-WzHNZ0W595hEeUStfGK6joEbQbjWJ0YVmZoOkojQ_VGGI_U">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+<span class="material-symbols-outlined absolute text-white text-[20px]">translate</span>
+</div>
+<div class="flex flex-col min-w-0 space-y-1">
+<h4 class="font-headline-sm text-headline-sm text-text-primary truncate font-bold">英语法律专业词汇与泛读</h4>
+<p class="font-body-sm text-body-sm text-text-secondary truncate">
+              120 张卡片 · 掌握度 91%
+            </p>
+</div>
+</div>
+<span class="flex-shrink-0 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200/60 text-mastery-proficient font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-mastery-proficient"></span>
+          熟练
+        </span>
+</div>
+<div class="mt-4 pt-1 flex items-center gap-3">
+<div class="flex-1 h-1.5 rounded-full bg-slate-100 overflow-hidden">
+<div class="h-full rounded-full bg-mastery-mastered" style="width: 91%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-text-secondary font-medium">91%</span>
+</div>
+</div>
+</div>
+<!-- Floating Import Action Module -->
+<div class="pt-2">
+<div class="relative rounded-2xl bg-slate-50 border border-border-subtle p-4 flex items-center justify-between shadow-[0_2px_8px_rgba(15,23,42,0.03)] hover:bg-slate-100/70 transition-colors">
+<div class="flex items-center gap-3.5">
+<div class="w-11 h-11 rounded-full bg-emerald-500 text-white flex items-center justify-center shadow-[0_4px_12px_rgba(16,185,129,0.3)]">
+<span class="material-symbols-outlined text-[22px]">upload_file</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-text-primary font-bold">＋ 导入新学习资料</h4>
+<span class="font-body-sm text-body-sm text-text-secondary">支持 PDF · PPT · 视频 · 语音笔记</span>
+</div>
+</div>
+<button class="flex-shrink-0 px-4 py-2 rounded-full bg-white border border-slate-200 hover:bg-primary-container hover:text-white hover:border-primary-container text-text-primary font-label-md text-label-md transition-all duration-200 active:scale-95 flex items-center gap-1 shadow-sm" type="button">
+<span class="">上传</span>
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- AI Knowledge Assistant Quick Prompt Banner -->
+<div class="rounded-2xl bg-emerald-50/70 border border-emerald-100 p-4 flex items-center gap-3 text-text-secondary">
+<span class="material-symbols-outlined text-primary-container text-[22px]">auto_fix_high</span>
+<p class="font-body-sm text-body-sm text-text-secondary min-w-0 flex-1 leading-relaxed">
+      蜂鸟 AI 已自动将 8 篇新导入文档拆解为 142 道测验题与要点卡片。
+    </p>
+</div>
+</div>
+<script>
+  // Interactive pill filter switches
+  document.querySelectorAll('.filter-pill').forEach(pill => {
+    pill.addEventListener('click', function() {
+      document.querySelectorAll('.filter-pill').forEach(p => {
+        p.classList.remove('bg-primary-container', 'text-white', 'shadow-[0_4px_14px_rgba(16,185,129,0.3)]', 'font-bold');
+        p.classList.add('bg-slate-100', 'text-text-secondary', 'border', 'border-slate-200/60');
+        const countSpan = p.querySelector('span:last-child');
+        if (countSpan) {
+          countSpan.classList.remove('bg-black/15', 'text-white');
+          countSpan.classList.add('bg-white', 'text-text-secondary', 'border', 'border-slate-200/50');
+        }
+      });
+      
+      this.classList.add('bg-primary-container', 'text-white', 'shadow-[0_4px_14px_rgba(16,185,129,0.3)]', 'font-bold');
+      this.classList.remove('bg-slate-100', 'text-text-secondary', 'border', 'border-slate-200/60');
+      const activeCountSpan = this.querySelector('span:last-child');
+      if (activeCountSpan) {
+        activeCountSpan.classList.add('bg-black/15', 'text-white');
+        activeCountSpan.classList.remove('bg-white', 'text-text-secondary', 'border', 'border-slate-200/50');
+      }
+    });
+  });
+</script></main><div class="fixed bottom-0 w-full z-50 pb-safe pointer-events-none"><div class="px-margin pb-4 w-full flex justify-center"><nav class="pointer-events-auto w-full max-w-[390px] h-16 rounded-full bg-white/90 backdrop-blur-xl border border-slate-200/80 shadow-[0_12px_32px_rgba(15,23,42,0.12)] px-space-sm flex items-center justify-around" data-active-classes="bg-primary-container text-white shadow-[0_4px_14px_rgba(16,185,129,0.3)] font-bold"><a class="flex flex-col items-center justify-center gap-0.5 px-3 py-1.5 rounded-full min-w-[56px] min-h-[44px] text-text-secondary hover:text-text-primary transition-all duration-200" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-sm text-label-sm">首页</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 px-3 py-1.5 rounded-full min-w-[56px] min-h-[44px] transition-all duration-200 bg-primary-container text-white shadow-[0_4px_14px_rgba(16,185,129,0.3)] font-bold" data-path="knowledge-base" href="#"><span class="material-symbols-outlined text-[22px]">local_library</span><span class="font-label-sm text-label-sm">知识库</span></a><a class="flex flex-col items-center justify-center gap-0.5 px-3 py-1.5 rounded-full min-w-[56px] min-h-[44px] text-text-secondary hover:text-text-primary transition-all duration-200" data-path="ai-tutor" href="#"><span class="material-symbols-outlined text-[22px]">auto_awesome</span><span class="font-label-sm text-label-sm">AI 助手</span></a><a class="flex flex-col items-center justify-center gap-0.5 px-3 py-1.5 rounded-full min-w-[56px] min-h-[44px] text-text-secondary hover:text-text-primary transition-all duration-200" data-path="mastery-profile" href="#"><span class="material-symbols-outlined text-[22px]">query_stats</span><span class="font-label-sm text-label-sm">我的</span></a></nav></div></div>
+
+<script src="/conbrie-ai-learning/app.js"></script></body></html>
